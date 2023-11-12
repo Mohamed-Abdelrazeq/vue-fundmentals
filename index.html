@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Hello Vuuue!</h1>
+
+    <div id="app">
+        <p>{{ fullName }} - {{ age }}</p>
+        <!-- <a :href="url">Google</a> -->
+
+        <form class="name-inputs">
+            <input type="text" v-model.lazy.trim="fname" @input.prevent="updatefName($event)">
+            <input type="text" v-model.lazy.trim="lname" @input.prevent="updatelName($event)">
+        </form>
+
+        <div>
+            <button @click="incrementAge">Increase Age</button>
+            <input class="age" type="number" v-model.number="age">
+            <button @click="decrementAge">Decrease Age</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
