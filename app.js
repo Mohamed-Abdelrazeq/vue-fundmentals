@@ -15,12 +15,6 @@ const app = Vue.createApp({
         decrementAge() {
             this.age--
         },
-        updatefName(event) {
-            this.fname = event.target.value
-        },
-        updatelName(event) {
-            this.lname = event.target.value
-        }
     },
     computed: {
         fullName() {
