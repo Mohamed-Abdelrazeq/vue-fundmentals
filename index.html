@@ -28,6 +28,10 @@
             <button @click="decrementAge">Decrease Age</button>
         </div>
 
+        <ul v-for="(bird, index) in birds" :key="bird" :class="bird">
+            <li>{{bird}} - {{index}}</li>
+        </ul>
+
     </div>
 
     <script src="app.js"></script>

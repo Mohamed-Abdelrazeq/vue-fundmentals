@@ -5,6 +5,7 @@ const app = Vue.createApp({
             lname: "Abdelrazek",
             url: "https://www.google.com",
             age: 25,
+            birds: ['parrot', 'eagle', 'crow']
         }
     },
 
